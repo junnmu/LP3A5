@@ -6,25 +6,19 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         final ProdutorConsumidor produtorConsumidor = new ProdutorConsumidor();
 
-        Thread produtor = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    produtorConsumidor.produzir();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+        Thread produtor = new Thread(() -> {
+            try {
+                produtorConsumidor.produzir();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         });
 
-        Thread consumidor = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    produtorConsumidor.consumir();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+        Thread consumidor = new Thread(() -> {
+            try {
+                produtorConsumidor.consumir();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         });
 
