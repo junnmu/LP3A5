@@ -28,3 +28,7 @@ Foi elaborado um exemplo simples de modo a tentar unir os dois conceitos absorvi
 [Código](https://github.com/junnmu/LP3A5/blob/main/reflection/src/br/edu/ifsp/Main.java)
 
 [Referência de Implementação](https://www.baeldung.com/java-reflection)
+
+## Refactoring Dojo - Glided Rose
+
+[Código](https://github.com/junnmu/LP3A5/tree/main/glided-rose/src/main/java/br/edu/ifsp)
